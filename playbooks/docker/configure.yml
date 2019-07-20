@@ -1,0 +1,12 @@
+---
+# Configuration plays for docker nodes
+
+- name: docker::configure
+  hosts:
+    - tags_docker
+  tags:
+    - docker::configure
+  gather_facts: yes
+  roles:
+    - name: adfinis-sygroup.docker
+      docker_vg_name: vg_data_01

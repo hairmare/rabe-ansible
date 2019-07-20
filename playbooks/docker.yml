@@ -1,0 +1,6 @@
+---
+# Runs preflight, install and configure plays in one go
+
+- import_playbook: docker/preflight.yml
+- import_playbook: docker/install.yml
+- import_playbook: docker/configure.yml

@@ -11,4 +11,6 @@
 #
 
 - import_playbook: playbooks/base.yml
+
+- import_playbook: playbooks/docker.yml
 - import_playbook: playbooks/live-studio.yml

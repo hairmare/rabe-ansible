@@ -1,0 +1,9 @@
+---
+# Install plays for docker nodes
+
+- name: docker::install
+  hosts:
+    - tags_docker
+  tags:
+    - docker::install
+  gather_facts: no

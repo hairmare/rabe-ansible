@@ -1,4 +1,6 @@
 ---
+- src: adfinis-sygroup.docker
+  version: master
 - src: linux-system-roles.kdump
   version: master
 - src: linux-system-roles.timesync

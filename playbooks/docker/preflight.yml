@@ -1,0 +1,9 @@
+---
+# Pre-flight check plays for docker nodes
+
+- name: docker::preflight
+  hosts:
+    - tags_docker
+  tags:
+    - docker::preflight
+  gather_facts: no
