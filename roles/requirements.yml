@@ -1,4 +1,6 @@
 ---
+- src: abrt.abrt-client-role
+  version: master
 - src: adfinis-sygroup.hostname
   version: master
 - src: linux-system-roles.kdump

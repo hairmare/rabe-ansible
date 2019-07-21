@@ -34,3 +34,12 @@
   gather_facts: yes
   roles:
     - name: linux-system-roles.kdump
+
+- name: base::configure:abrt
+  hosts:
+    - all
+    - '!tags_legacy'
+  tags:
+    - base::configure:abrt
+  roles:
+    - name: abrt.abrt-client-role
